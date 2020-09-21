@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ali-sonatype-nexus-staging/ali-sonatype-nexus-staging.iml" filepath="$PROJECT_DIR$/ali-sonatype-nexus-staging/ali-sonatype-nexus-staging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/unicom-training.iml" filepath="$PROJECT_DIR$/unicom-training.iml" />
+    </modules>
+  </component>
+</project>
