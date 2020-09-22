@@ -28,27 +28,10 @@ public class AliConfiguration {
         CreateUploadVideoRequest request = new CreateUploadVideoRequest();
         request.setTitle("this is a sample");
         request.setFileName("filename.mp4");
-        //UserData，用户自定义设置参数，用户需要单独回调URL及数据透传时设置(非必须)
-        //JSONObject userData = new JSONObject();
-        //UserData回调部分设置
-        //JSONObject messageCallback = new JSONObject();
-        //messageCallback.put("CallbackURL", "http://xxxxx");
-        //messageCallback.put("CallbackType", "http");
-        //userData.put("MessageCallback", messageCallback.toJSONString());
-        //UserData透传数据部分设置
-        //JSONObject extend = new JSONObject();
-        //extend.put("MyId", "user-defined-id");
-        //userData.put("Extend", extend.toJSONString());
-        //request.setUserData(userData.toJSONString());
         return client.getAcsResponse(request);
     }
 
-    /*
-    * AccessKey ID
-        LTAI4GAKpmB1ueZHoJ4U2r1i
-      AccessKey Secret
-        sHHS7Ja9b67MHxTeOBA4O5Ci3Qx8hm
-    * */
+
 
     // 请求示例
     public static void main1(String[] argv) throws ClientException {
@@ -64,7 +47,6 @@ public class AliConfiguration {
         }
         System.out.print("RequestId = " + response.getRequestId() + "\n");
     }
-
     /**
      * 刷新视频上传凭证
      * @param client 发送请求客户端
@@ -77,7 +59,7 @@ public class AliConfiguration {
         return client.getAcsResponse(request);
     }
     // 请求示例
-    public static void main(String[] argv) throws ClientException {
+    public static void main2(String[] argv) throws ClientException {
         DefaultAcsClient client = initVodClient("LTAI4GAKpmB1ueZHoJ4U2r1i", "sHHS7Ja9b67MHxTeOBA4O5Ci3Qx8hm");
         RefreshUploadVideoResponse response = new RefreshUploadVideoResponse();
         try {
